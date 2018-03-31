@@ -1,0 +1,121 @@
+header,
+main,
+section,
+footer,
+article {
+    display: block;
+}
+
+ul {
+    list-style: none
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* responsive form*/
+
+
+.signup_container {
+    width: 100%;
+    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+    background: rgb(221, 221, 221);
+    color: rgb(80, 80, 80);
+    padding: 50px 0;
+}
+
+.signup_container * {
+    box-sizing: border-box;
+}
+
+.flex_outer,
+.flex_inner {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex_outer {
+    max-width: 800px;
+    padding: 0 38px 0 38px;
+}
+
+.flex_outer li,
+.flex_inner {
+    display: flex;
+    
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex_inner {
+    padding: 0 8px;
+    justify-content: flex-start;
+}
+
+.flex_outer>li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.flex_outer li label,
+.flex_outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.flex_outer>li>label,
+.flex_outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.flex_outer>li>label+*,
+.flex_inner {
+    flex: 1 0 220px;
+}
+
+.flex_outer li p {
+    margin: 0;
+}
+
+.flex_outer li input:not([type='checkbox']):not([type="radio"]),
+.flex_outer li textarea {
+    padding: 15px;
+    border: none;
+}
+
+.flex_outer li button {
+    margin-right: auto;
+    padding: 16px 32px;
+    border: none;
+    background: rgb(77, 77, 77);
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+
+.flex_outer li button:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.flex_inner li {
+    width: 100px;
+    font-size: 15px;
+}
