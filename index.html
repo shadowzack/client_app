@@ -1,84 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>calculator</title>
     <link rel="stylesheet" href="includes/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="includes/main.js"></script>
 </head>
+
 <body>
-    
+
     <div class="signup_container">
-           
-       
-      <ul class="flex_outer">
-        <li>
-          <label for="firstname">First Name</label>
-          <input type="text"  name="firstname" placeholder="Enter your first name" required>
-        </li>
-        <li>
-          <label for="lastname">Last Name</label>
-          <input type="text" name="lastname" placeholder="Enter your last" required>
-        </li>
-        <li>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email " required>
-        </li>
-        <li>
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" placeholder="Enter your phone " required>
-        </li>
-        <li>
-            <label for="pass">password</label>
-            <input type="password" id="pass" name="pass" placeholder="Enter your password " required>
-          </li>
-          <li>
-            <label for="re-pass">re-password</label>
-            <input type="password" id="re-pass" name="repass" placeholder="renter your password " required>
-          </li>
-          <li>
-            <label for="address">address</label>
-            <input type="text" id="address" name="address" placeholder="enter your address " required>
-          </li>
-      <!--  <li>
-          <p>Age</p>
-          <ul class="flex-inner">
+
+
+        <ul class="flex_outer">
             <li>
-              <input type="checkbox" id="other">
-              <label for="other">Other</label>
+                <label for="num1">num1</label>
+                <input type="number" id="num1" name="num1" placeholder="Enter num1" required>
             </li>
-          </ul>
-        </li>-->
+            <li>
+                <label for="num2">num2</label>
+                <input type="number" id="num2" name="num2" placeholder="Enter num2" required>
+            </li>
+            <li>
 
-        <li>
-            <p>Gender</p>
-            <ul class="flex_inner" style=" justify-content:flex-start; ">
-              <li>
-                <input type="radio" id="0" name="gender">
-                <label for="0">male</label>
-              </li>
-              <li>
-                <input type="radio" id="1"  name="gender">
-                <label for="1">female</label>
-              </li>
-            </ul>
-          </li>
-
-        <li>
-          <button name="signup" type="submit">SIGNUP</button>
-        </li>
-      
-      </ul>
-    </form>
+                <label for="num3">num3</label>
+                <input type="number" id="num3" name="num3" placeholder="Enter  num3 " required>
+            </li>
 
 
 
+            <li style="border-bottom:1px solid rgba(0, 0, 0, 0.11);">
+                <p>operations</p>
+                <ul class="flex_inner" style=" justify-content:flex-start; ">
+                    <li>
 
-  </div>
+                        <label for="0">AVERAGE
+
+                            <input type="radio" id="0" name="operation" value="avg">
+                        </label>
+                    </li>
+                    <li>
+
+                        <label for="1">MULTIPLY
+                            <input type="radio" id="1" name="operation" value="mult" checked>
+                        </label>
+                    </li>
+                    <li>
+
+                        <label for="2">SUM
+                            <input type="radio" id="2" name="operation" value="sum">
+
+                        </label>
+                    </li>
+                </ul>
+            </li>
 
 
-    
+            <li style="border-bottom:1px solid rgba(0, 0, 0, 0.11);">
+                <p>method</p>
+                <ul class="flex_inner" style=" justify-content:flex-start; ">
+                    <li>
+
+                        <label for="3">GET
+
+                            <input type="radio" id="3" name="method" value="GET" checked>
+                        </label>
+                    </li>
+                    <li>
+
+                        <label for="4">POST
+                            <input type="radio" id="4" name="method" value="POST">
+                        </label>
+                    </li>
+                    <li>
+
+                        <label for="5">PUT
+                            <input type="radio" id="5" name="method" value="PUT">
+
+                        </label>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <button name="calc_btn" id="calc_btn" type="submit">calculate</button>
+
+            </li>
+            <li>RESULT:
+                <div id="result"></div>
+            </li>
+        </ul>
+
+    </div>
+
 </body>
+
 </html>
